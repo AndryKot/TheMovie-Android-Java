@@ -1,7 +1,8 @@
 package com.example.themovie_android_java.network;
 
-import android.graphics.Movie;
 
+
+import com.example.themovie_android_java.model.Movie;
 import com.example.themovie_android_java.model.MovieDetail;
 import com.example.themovie_android_java.model.Review;
 import com.example.themovie_android_java.model.Trailer;
