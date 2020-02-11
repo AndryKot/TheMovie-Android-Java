@@ -129,7 +129,7 @@ public class DetailFragment extends Fragment {
                 MovieDetail movieDetail = (MovieDetail) response.body();
 
                 if(movieDetail != null) {
-                    Picasso.with(getContext())
+                    Picasso.get()
                             .load(Constant.IMG_URL + movieDetail.getPosterPath())
                             .into(imgPoster);
 
@@ -238,7 +238,7 @@ public class DetailFragment extends Fragment {
             TextView trailerName = (TextView) view.findViewById(R.id.trailer_name);
 
             if(trailerData.getSite().equalsIgnoreCase("youtube")) {
-                Picasso.with(getContext())
+                Picasso.get()
                         .load("http://img.youtube.com/vi/" + trailerData.getKey() + "/default.jpg")
                         .into(trailerThumb);
             }

@@ -101,7 +101,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         }
 
         public void bind(MovieData movieData) {
-            Picasso.with(context)
+            Picasso.get()
                     .load(Constant.IMG_URL + movieData.getPosterPath())
                     .into(img);
         }
